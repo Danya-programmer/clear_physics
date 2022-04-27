@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Главная страница {% endblock title %}
+
+{% block content %}
+ <section class="main"><div class="banner">
+            <img src="../static/img/phisic.jpg" alt="">
+        </div>
+        <div class="some_text">
+            <p class="heading">Непонятное - понятным языком!</p>
+            <p class="under_heading">Школьный курс физики: формулы, определения, задачи и их решение.</p>
+        </div>
+        <div class="prepatation_exams">
+            <a href="https://phys-oge.sdamgia.ru/" class="exams">Подготовка к ОГЭ</a>
+            <a href='https://phys-ege.sdamgia.ru/'class="exams">Подготовка к ЕГЭ</a>
+        </div>
+
+    </section>
+
+{% endblock content %}

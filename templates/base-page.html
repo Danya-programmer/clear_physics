@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %} {% endblock title %}
+
+{% block content %}
+<main class="main1">
+     <h1 class="chapters">{% block name %}{% endblock name %}</h1>
+        <div class="sections">
+
+            <div class="section">
+                <a href="#theory_text" class="section_item" id="theory">
+                    <div class="theory">Теория</div>
+                </a>
+                <div id="theory_text" class="hide">
+                    {% block theory %}
+
+                    {% endblock theory %}
+                    </div>
+
+            <div class="section">
+                <a href="#formulas_text" class="section_item" id="formulas">
+                    <div class="formulas">Формулы</div>
+                </a>
+                <div id="formulas_text" class="hide">
+                    {% block formulas %}
+
+                    {% endblock formulas %}
+                </div>
+            </div>
+
+            <div class="section">
+                <a href="#tasks_text" class="section_item" id="tasks">
+                    <div class="tasks">Задачи</div>
+                </a>
+                <div id="tasks_text" class="hide">
+                    {% block tasks %}
+
+                    {% endblock tasks %}
+                </div>
+            </div>
+        </div>
+        </main>
+{% endblock content %}

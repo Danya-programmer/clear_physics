@@ -1,0 +1,1 @@
+web: gunicorn clear_physics.wsgi --log-file -
